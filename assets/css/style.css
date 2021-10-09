@@ -89,7 +89,7 @@ h1 {
     max-width: 5.5rem;
 }
 
-.answer {
+.answer-styling {
     height: auto;
     grid-template-columns: repeat(2, auto);
     margin: 1rem;
