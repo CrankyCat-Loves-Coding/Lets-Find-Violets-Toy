@@ -1,11 +1,11 @@
 // add quiz questions
 const questionBank = [
     {
-        question: 'q1?',
-        a: 'assets/images/beach-ball.png',
-        b: 'assets/images/beach-ball.png',
-        c: 'assets/images/beach-ball.png',
-        d: 'assets/images/beach-ball.png',
+        question: 'One day I was playing, I left for a snack, My ball was missing when I came back! I feel ... ...',
+        a: 'assets/images/q1/sad.png',
+        b: 'assets/images/q1/scared.png',
+        c: 'assets/images/q1/sleeping.png',
+        d: 'assets/images/q1/smile.png',
         correct:'a',
     },
     {
@@ -43,19 +43,27 @@ function startGame () {
     loadQuiz();
 }; 
 
-let question = 0;
+let currentquestion = 0;
 loadQuiz()
 let score = 0;
 
 function loadQuiz() {
-    const quizData = questionBank[question]
+    console.log(currentquestion)
 
+    deselectAnswers() 
+    const quizData = questionBank[currentquestion]
     questionEl.innerText = quizData.question
     a.src = quizData.a
     b.src = quizData.b
     c.src = quizData.c
     d.src = quizData.d
 };
+
+
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
 
 function nextQuestion (){
     for (let i = 0; i < questionBank.length; i++){
@@ -82,13 +90,14 @@ function selected() {
 nextButton.addEventListener ('click', ()=>{
     const answer = selected()
     if (answer){
-        if(answer === questionBank[question].correct){
+        if(answer === questionBank[currentquestion].correct){
             score++
         }
-        question++
-        if(question < questionBank.length) {
+        currentquestion++
+        if(currentquestion < questionBank.length) {
             loadQuiz()
         } else {
+            currentquestion = 0;
             startButton.innerText = 'Restart';
             startButton.classList.remove ('hide');
             nextButton.classList.add ('hide');
