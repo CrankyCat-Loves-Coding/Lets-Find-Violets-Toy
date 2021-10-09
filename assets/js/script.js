@@ -3,13 +3,17 @@ const questionBank = [
     {
         question: 'One day I was playing, I left for a snack, My ball was missing when I came back! I feel ... ...',
         a: 'assets/images/q1/sad.png',
+        atext:'Sad',
         b: 'assets/images/q1/scared.png',
+        btext:'Scared',
         c: 'assets/images/q1/sleeping.png',
+        ctext:'Sleeping',
         d: 'assets/images/q1/smile.png',
+        dtext:'Smile',
         correct:'a',
     },
     {
-        question: 'q2?',
+        question: 'It was not by the carrots, not by the peas ... Can you find carrots and peas?',
         a: 'assets/images/rejection.png',
         b: 'assets/images/rejection.png',
         c: 'assets/images/rejection.png',
@@ -27,6 +31,10 @@ const a = document.getElementById('a-answer-image');
 const b = document.getElementById('b-answer-image');
 const c = document.getElementById('c-answer-image');
 const d = document.getElementById('d-answer-image');
+const atext = document.getElementById('a-image-text');
+const btext = document.getElementById('b-image-text');
+const ctext = document.getElementById('c-image-text');
+const dtext = document.getElementById('d-image-text');
 const nextButton = document.getElementById ('next-btn');
 
 
@@ -57,6 +65,12 @@ function loadQuiz() {
     b.src = quizData.b
     c.src = quizData.c
     d.src = quizData.d
+
+    atext.innerText = quizData.atext
+    btext.innerText = quizData.btext
+    ctext.innerText = quizData.ctext
+    dtext.innerText = quizData.dtext
+
 };
 
 
