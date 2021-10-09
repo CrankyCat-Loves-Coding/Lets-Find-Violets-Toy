@@ -26,8 +26,11 @@ const a = document.getElementById('a-answer-image');
 const b = document.getElementById('b-answer-image');
 const c = document.getElementById('c-answer-image');
 const d = document.getElementById('d-answer-image');
+const nextButton = document.getElementById ('next-btn');
+
 
 startButton.addEventListener ('click', startGame);
+showAnswers.addEventListener ('click', nextQuestion);
 
 function startGame () {
     console.log ('started')
@@ -48,3 +51,16 @@ function loadQuiz() {
     c.src = quizData.c
     d.src = quizData.d
 }
+
+function nextQuestion (){
+    for (let i = 0; i < questionBank.length; i++){
+        if (i < questionBank.length){
+            nextButton.classList.remove ('hide');
+            console.log('answered!');
+        } else {
+            nextButton.classList.add ('hide');
+            startButton.innerText = 'Restart';
+            startButton.classList.remove ('hide');
+        }
+    }
+};
