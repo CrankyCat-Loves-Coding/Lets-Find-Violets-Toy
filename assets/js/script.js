@@ -185,7 +185,7 @@ nextButton.addEventListener ('click', ()=>{
     const answer = selected()
     if (answer){
         if(answer === questionBank[currentquestion].correct){
-            score++
+            console.log(answer)
         }
         currentquestion++
         if(currentquestion < questionBank.length) {
