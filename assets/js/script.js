@@ -20,7 +20,8 @@ const questionBank = [
 
 const startButton = document.getElementById ('start-btn');
 const showAnswers = document.getElementById ('answer-container');
-const questionEl = document.getElementById('question-container');
+const questionEl = document.getElementById('show-quiz');
+const letsgo = document.getElementById ('letsgo');
 const answerEls = document.querySelectorAll('.answer');
 const a = document.getElementById('a-answer-image');
 const b = document.getElementById('b-answer-image');
@@ -32,15 +33,19 @@ const nextButton = document.getElementById ('next-btn');
 startButton.addEventListener ('click', startGame);
 showAnswers.addEventListener ('click', nextQuestion);
 
+
 function startGame () {
     console.log ('started')
     startButton.classList.add ('hide');
     showAnswers.classList.remove ('hide');
+    letsgo.classList.add ('hide');
+    questionEl.classList.remove ('hide');
     loadQuiz();
 }; 
 
 let question = 0;
 loadQuiz()
+let score = 0;
 
 function loadQuiz() {
     const quizData = questionBank[question]
@@ -50,17 +55,44 @@ function loadQuiz() {
     b.src = quizData.b
     c.src = quizData.c
     d.src = quizData.d
-}
+};
 
 function nextQuestion (){
     for (let i = 0; i < questionBank.length; i++){
         if (i < questionBank.length){
+
             nextButton.classList.remove ('hide');
             console.log('answered!');
         } else {
             nextButton.classList.add ('hide');
-            startButton.innerText = 'Restart';
-            startButton.classList.remove ('hide');
         }
     }
 };
+
+function selected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+nextButton.addEventListener ('click', ()=>{
+    const answer = selected()
+    if (answer){
+        if(answer === questionBank[question].correct){
+            score++
+        }
+        question++
+        if(question < questionBank.length) {
+            loadQuiz()
+        } else {
+            startButton.innerText = 'Restart';
+            startButton.classList.remove ('hide');
+            nextButton.classList.add ('hide');
+            showAnswers.classList.add ('hide');
+        }
+    }
+});
