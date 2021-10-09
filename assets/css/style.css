@@ -33,3 +33,101 @@ h1 {
     box-shadow: -1rem -1rem 1.5rem rgba(255, 255, 255, 0.9),8px 8px 25px rgba(0, 0, 0, 0.5);
     border: 1px solid #fff;
 }
+
+/* four sections in game container */
+.score {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.question {
+    width: 70%;
+    height: 4rem;
+    background-color: #ecf9f5;
+    text-align: center;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.g-image {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(203, 216, 208);
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.ball {
+    max-width: 2rem;
+    animation: ball .8s linear infinite;
+}
+
+@keyframes ball {
+    0%{
+        transform: translatex(0) rotate(0deg);
+    }
+    25%{
+        transform: translateY(-2rem) rotate(100deg);
+    }
+    50%{
+        transform: translatex(-0) rotate(180deg);
+    }
+    75%{
+        transform: translateY(-2rem) rotate(320deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.violet {
+    max-width: 5.5rem;
+}
+
+.answer {
+    height: auto;
+    grid-template-columns: repeat(2, auto);
+    margin: 1rem;
+}
+
+  img.answer-image {
+    width: 4rem;
+    height: 4rem;
+}
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.start-btn, .next-btn {
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: .5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* link to make purchase and share this game */
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    width: 80%;
+
+}
