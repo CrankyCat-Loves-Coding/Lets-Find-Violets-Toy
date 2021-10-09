@@ -86,6 +86,9 @@ const questionBank = [
     }
 ];
 
+/**
+ * define DOM elements
+ */
 const startButton = document.getElementById ('start-btn');
 const showAnswers = document.getElementById ('answer-container');
 const questionEl = document.getElementById('show-quiz');
@@ -101,11 +104,15 @@ const ctext = document.getElementById('c-image-text');
 const dtext = document.getElementById('d-image-text');
 const nextButton = document.getElementById ('next-btn');
 
-
+/**
+ * event listeners
+ */
 startButton.addEventListener ('click', startGame);
 showAnswers.addEventListener ('click', nextQuestion);
 
-
+/**
+ * start game when click start or restart game
+ */
 function startGame () {
     console.log ('started')
     startButton.classList.add ('hide');
@@ -115,6 +122,9 @@ function startGame () {
     loadQuiz();
 }; 
 
+/**
+ * to load quiz
+ */
 let currentquestion = 0;
 loadQuiz()
 let score = 0;
@@ -138,11 +148,16 @@ function loadQuiz() {
 };
 
 
-
+/**
+ * deselect answer when start a new question
+ */
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
 
+/**
+ * move to next question
+ */
 function nextQuestion (){
     for (let i = 0; i < questionBank.length; i++){
         if (i < questionBank.length){
@@ -154,6 +169,7 @@ function nextQuestion (){
         }
     }
 };
+
 
 function selected() {
     let answer
