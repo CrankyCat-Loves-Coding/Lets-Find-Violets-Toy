@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* center and style game container also apply google font */
+/* style game container */
 body {
     font-size: 62.5%;
     display: flex;
@@ -35,12 +35,14 @@ h1 {
     
 }
 
-/* four sections in game container */
+/*  sections in game container */
 
 #game-panel {
     width: 100%;
     height: 80%;
 }
+
+/*  sections of questions */
 
 .question {
     width: 85%;
@@ -51,14 +53,30 @@ h1 {
     text-align: justify;
 }
 
+/*  sections of the ball and Violet */
 .g-image {
     width: 100%;
     height: 5rem;
-    background-color: rgb(203, 216, 208);
     text-align: center;
     margin: 0.5rem 0;
 }
 
+.image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.ball {
+    max-width: 2rem;
+    animation: ball 3s linear infinite;
+}
+
+.violet {
+    max-width: 5.5rem;
+    animation: violet 3s linear infinite;
+}
+
+/*  sections of answers */
 .answer-notice {
     text-align: right;
     display: flex;
@@ -78,23 +96,6 @@ p.wrong {
     font-weight: bold;
     font-size: 16px;
 }
-
-.image {
-    width: 5rem;
-    height: 5rem;
-}
-
-.ball {
-    max-width: 2rem;
-    animation: ball 3s linear infinite;
-}
-
-.violet {
-    max-width: 5.5rem;
-    animation: violet 3s linear infinite;
-}
-
-
 
 .answer-styling ul {
     display: grid;

@@ -205,6 +205,9 @@ nextButton.addEventListener ('click', ()=>{
             startButton.classList.remove ('hide');
             nextButton.classList.add ('hide');
             showAnswers.classList.add ('hide');
+            wrong.classList.add ('hide');
+            correct.classList.add ('hide');
+            questionEl.innerText = 'Well done! You have helped me found the ball! Thank you';
         }
     }
 });
