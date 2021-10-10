@@ -34,7 +34,7 @@ const questionBank = [
         ctext:'Banana',
         d: 'assets/images/q3/apple.png',
         dtext:'Apple',
-        correct: 'a',
+        correct: 'd',
     },
     {
         question: 'It was not in the grass not by the hose, to find it I needed to follow my nose ... ... Can you find the hose?',
@@ -103,6 +103,8 @@ const btext = document.getElementById('b-image-text');
 const ctext = document.getElementById('c-image-text');
 const dtext = document.getElementById('d-image-text');
 const nextButton = document.getElementById ('next-btn');
+const correct = document.querySelector('.corret');
+const wrong = document.querySelector('.wrong');
 
 /**
  * event listeners
@@ -127,7 +129,6 @@ function startGame () {
  */
 let currentquestion = 0;
 loadQuiz()
-let score = 0;
 
 function loadQuiz() {
     console.log(currentquestion)
@@ -170,6 +171,9 @@ function nextQuestion (){
     }
 };
 
+/**
+ * check answer and diplay correct/wrong message after answer selected 
+ */
 
 function selected() {
     let answer
@@ -185,7 +189,12 @@ nextButton.addEventListener ('click', ()=>{
     const answer = selected()
     if (answer){
         if(answer === questionBank[currentquestion].correct){
-            console.log(answer)
+            correct.classList.remove ('hide');
+            wrong.classList.add ('hide');
+
+        }else {
+            correct.classList.add ('hide');
+            wrong.classList.remove ('hide');
         }
         currentquestion++
         if(currentquestion < questionBank.length) {

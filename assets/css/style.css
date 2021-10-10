@@ -59,6 +59,26 @@ h1 {
     margin: 0.5rem 0;
 }
 
+.answer-notice {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+p.corret {
+    color: #2d8e5e;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.wrong {
+    color: #f30d39;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .image {
     width: 5rem;
     height: 5rem;
@@ -66,30 +86,15 @@ h1 {
 
 .ball {
     max-width: 2rem;
-    animation: ball .8s linear infinite;
-}
-
-@keyframes ball {
-    0%{
-        transform: translatex(0) rotate(0deg);
-    }
-    25%{
-        transform: translateY(-2rem) rotate(100deg);
-    }
-    50%{
-        transform: translatex(-0) rotate(180deg);
-    }
-    75%{
-        transform: translateY(-2rem) rotate(320deg);
-    }
-    100% {
-        transform: translateY(0) rotate(360deg);
-    }
+    animation: ball 3s linear infinite;
 }
 
 .violet {
     max-width: 5.5rem;
+    animation: violet 3s linear infinite;
 }
+
+
 
 .answer-styling ul {
     display: grid;
