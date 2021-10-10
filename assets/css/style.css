@@ -68,13 +68,46 @@ h1 {
 
 .ball {
     max-width: 2rem;
-    animation: ball 3s linear infinite;
 }
 
 .violet {
     max-width: 5.5rem;
-    animation: violet 3s linear infinite;
 }
+
+/*  annimation for ball and Violet */
+@keyframes ball {
+    0%{
+        transform: translateX(-10rem) rotate(0deg);
+    }
+    25%{
+        transform: translateY(-1rem) rotate(100deg);
+    }
+    50%{
+        transform: translateX(0rem) rotate(180deg);
+    }
+    75%{
+        transform: translateX(5rem) rotate(320deg);
+    }
+    100% {
+        transform: translateX(10rem) rotate(360deg);
+    }
+}
+
+@keyframes violet {
+    0%{
+        transform: translateX(10rem);
+    }
+    25%{
+        transform: translateX(-1rem);
+    }
+    50%{
+        transform: translateY(0rem);
+    }
+    75%{
+        transform: translateX(0rem);
+    }
+}
+
 
 /*  sections of answers */
 .answer-notice {

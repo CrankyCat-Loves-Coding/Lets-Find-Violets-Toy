@@ -105,6 +105,8 @@ const dtext = document.getElementById('d-image-text');
 const nextButton = document.getElementById ('next-btn');
 const correct = document.querySelector('.corret');
 const wrong = document.querySelector('.wrong');
+const ball = document.querySelector('.ball');
+const violet = document.querySelector('.violet');
 
 /**
  * event listeners
@@ -121,6 +123,8 @@ function startGame () {
     showAnswers.classList.remove ('hide');
     letsgo.classList.add ('hide');
     questionEl.classList.remove ('hide');
+    ball.classList.add ('hide');
+    violet.classList.add ('hide');
     loadQuiz();
 }; 
 
@@ -171,6 +175,7 @@ function nextQuestion (){
     }
 };
 
+
 /**
  * check answer and diplay correct/wrong message after answer selected 
  */
@@ -191,10 +196,18 @@ nextButton.addEventListener ('click', ()=>{
         if(answer === questionBank[currentquestion].correct){
             correct.classList.remove ('hide');
             wrong.classList.add ('hide');
+            ball.classList.add ('hide');
+            violet.classList.remove ('hide');
+            violet.style.animation = 'violet 3s linear infinite';
+            
 
         }else {
             correct.classList.add ('hide');
             wrong.classList.remove ('hide');
+            ball.classList.remove ('hide');
+            violet.classList.add ('hide');
+            ball.style.animation = 'ball 3s linear infinite';
+            
         }
         currentquestion++
         if(currentquestion < questionBank.length) {
@@ -208,6 +221,10 @@ nextButton.addEventListener ('click', ()=>{
             wrong.classList.add ('hide');
             correct.classList.add ('hide');
             questionEl.innerText = 'Well done! You have helped me found the ball! Thank you';
+            ball.classList.remove ('hide');
+            violet.classList.remove ('hide');
+            ball.style.animation = 'ball 3s linear infinite';
+            violet.style.animation = 'violet 3s linear infinite';
         }
     }
 });
