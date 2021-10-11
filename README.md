@@ -11,14 +11,14 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 - [**Let’s find Voilet’s Toy**](#overview)
   - [**Overview**](#overview)
   - [**Table of Contents**](#table-of-contents)
-    - [**1. What is it?**](#1-what-is-it)
-    - [**2. How to achieve?**](#2-how-to-achieve)
-    - [**3. Testing and launch**](#3-testing-and-launch)
+    - [**1. What Is It?**](#1-what-is-it)
+    - [**2. How to Achieve?**](#2-how-to-achieve)
+    - [**3. Testing and Launch**](#3-testing-and-launch)
     - [**4. Deployment**](#4-deployment)
     - [**5. Support**](#5-support)
     - [**6. Reference and Research**](#6-reference-and-research)
 
-### **1. What is it?**
+### **1. What Is It?**
 
 - The Goal of The Game
 
@@ -34,15 +34,15 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 
 [Back to the top](#overview)
 
-### **2. How to achieve?**
+### **2. How to Achieve?**
 
 - Features
 
   - **Header**
 
-    Featured at the top of the page, the header shows the game name :Let’s FIND VIOLET’S TOY!
+    Featured at the top of the page, the header shows the game name :Let’s Find Violet's toy!
 
-  - **How to play**
+  - **How to Play**
 
     Violet is a bright purple puppy with a pink collar and white markings. There are eight scenes.A welcome page contains a start button allowing players to start the game.A ball will appear if the player has a wrong answer and a message of 'It's ok~ Let's try again~' will display.If the player gets the correct answer, Violet will appear with a message of 'Wow! You got it!'.The message of 'Well done! You have helped me find the ball. Thank you!'will appear when the player completes the quiz and a restart button will show.
     Players will learn the words 'Sad, Carrot, Apple, Hose, Books, Sink and Rug by completing this quiz.
@@ -76,7 +76,7 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 
 [Back to the top](#overview)
 
-### 3. **Testing and launch**
+### 3. **Testing and Launch**
 
 - HTML validation
 
