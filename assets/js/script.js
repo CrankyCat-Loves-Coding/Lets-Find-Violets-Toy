@@ -1,15 +1,15 @@
 // add quiz questions
 const questionBank = [
     {
-        question: 'One day I was playing, I left for a snack, My ball was missing when I came back! I feel ... ...',
+        question: 'One day I was playing, I left for a snack, My ball was missing when I came back! I felt ... ...',
         a: 'assets/images/q1/sad.png',
         atext:'Sad',
         b: 'assets/images/q1/scared.png',
         btext:'Scared',
         c: 'assets/images/q1/sleeping.png',
-        ctext:'Sleeping',
+        ctext:'Sleepy',
         d: 'assets/images/q1/smile.png',
-        dtext:'Smile',
+        dtext:'Happy',
         correct:'a',
     },
     {
@@ -25,7 +25,7 @@ const questionBank = [
         correct: 'b',
     },
     {
-        question: 'Not by the pear or the apple trees ... ...Can you find the apple?',
+        question: 'It was not by the pear or the apple trees ... ...Can you find the apple?',
         a: 'assets/images/q3/strawberry.png',
         atext:'Strawberry',
         b: 'assets/images/q3/pear.png',
@@ -51,7 +51,7 @@ const questionBank = [
     {
         question: 'I went in the house, it was not by the books ... ... can you find books?',
         a: 'assets/images/q5/book.png',
-        atext:'Book',
+        atext:'Books',
         b: 'assets/images/q5/pen.png',
         btext:'Pen',
         c: 'assets/images/q5/picture-frame.png',
@@ -61,7 +61,7 @@ const questionBank = [
         correct: 'a',
     },
     {
-        question: 'Not by the sink or the clothes on the hooks ... ... Can you find the sink?',
+        question: 'It was not by the sink or the clothes on the hooks ... ... Can you find the sink?',
         a: 'assets/images/q6/toilet-paper.png',
         atext:'Toilet paper',
         b: 'assets/images/q6/toothbrush.png',
@@ -73,7 +73,7 @@ const questionBank = [
         correct: 'c',
     },
     {
-        question: 'So much searching, I took a break for a snack, There it was on the rug, I was happy to have my ball back ... ...Can you find rug?',
+        question: 'So much searching, I took a break for a snack, There it was on the rug, I was happy to have my ball back ... ...Can you find the rug?',
         a: 'assets/images/q7/floor-lamp.png',
         atext:'Lamp',
         b: 'assets/images/q7/rug.png',
@@ -220,7 +220,7 @@ nextButton.addEventListener ('click', ()=>{
             showAnswers.classList.add ('hide');
             wrong.classList.add ('hide');
             correct.classList.add ('hide');
-            questionEl.innerText = 'Well done! You have helped me found the ball! Thank you';
+            questionEl.innerText = 'Well done! You have helped me find the ball. Thank you!';
             ball.classList.remove ('hide');
             violet.classList.remove ('hide');
             ball.style.animation = 'ball 3s linear infinite';
