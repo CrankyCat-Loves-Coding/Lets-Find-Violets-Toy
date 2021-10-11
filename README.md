@@ -4,7 +4,7 @@
 
 ## **Overview**
 
-I create this game for my 3 years old toddler girl. This idea came from one of her favorite books <Let’s find Violet’s Toy>. This book is published by the LeapFrog company. Narrating a story how the dog Violet eventually found its toy. This game is created as my second portfolio only for educational purposes.
+I create this game for my 3-year-old toddler. This idea came from one of her favorite books <Let’s find Violet’s Toy>. This book was published by the LeapFrog company. It's a story about how the dog Violet eventually found its toy.I created this game as part of my coding project.
 
 ## **Table of Contents**
 
@@ -20,17 +20,17 @@ I create this game for my 3 years old toddler girl. This idea came from one of h
 
 ### **1. What is it?**
 
-- Goal for game
+- The Goal of The Game
 
-  - This game designed base on the book of <Let’s find Violet’s Toy> published by the LeapFrog company. This is a narrative storybook. It helps children learn how stories are put together. As children begin to see that storybooks include characters, settings, and a sequence of events with a clear beginning, middle and end, they can better comprehend new story.
-  - Introduces children to words and feelings through activities.
+  - This game is based on the book <Let’s find Violet’s Toy> published by the LeapFrog company. This is a narrative storybook. It helps children learn how stories are put together. As children begin to see that storybooks include characters, settings, and a sequence of events with a clear beginning, middle and end, they can better comprehend new stories.
+  - The book introduces children to words and feelings through activities.
   - This game is designed to be easy, attractive and fun for children to play.
   - This game is also perfect for family time.
 
-- Target audience
+- Target Audience
 
-  - 3 years old toddler
-  - Home teaching parenting
+  - 3-years-old toddler
+  - Parents who want to teach their children literacy skills
 
 [Back to the top](#overview)
 
@@ -44,10 +44,10 @@ I create this game for my 3 years old toddler girl. This idea came from one of h
 
   - **How to play**
 
-    Violet is a bright purple puppy with a pink collar and white markings. There are eight scenes.A welcome page contain a start buttn allowing player to start the game.A ball will appear if the player have a wrong answer and message of 'It's ok~ Let's try again~' will display.On the other hand, Violet the dog will appear if the player have a correct answer and message of 'Wow! You got it!' will display.The message of 'Well done! You have helped me find the ball. Thank you!'will display when the player complete the quiz and a restart button will show.
-    by completing this quiz, our player should be able to learn the words of 'Sad, Carrot, Apple, Hose, Books, Sink and Rug).
+    Violet is a bright purple puppy with a pink collar and white markings. There are eight scenes.A welcome page contains a start button allowing players to start the game.A ball will appear if the player has a wrong answer and a message of 'It's ok~ Let's try again~' will display.If the player gets the correct answer, Violet will appear with a message of 'Wow! You got it!'.The message of 'Well done! You have helped me find the ball. Thank you!'will appear when the player completes the quiz and a restart button will show.
+    Players will learn the words 'Sad, Carrot, Apple, Hose, Books, Sink and Rug by completing this quiz.
 
-- Style elements
+- Style Elements
   - **Fonts**
   
     *Roboto* has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
@@ -57,12 +57,12 @@ I create this game for my 3 years old toddler girl. This idea came from one of h
   - **Icons**
 
     Icons from Font Awesome used to style social links to create a tidy and easy access for subscription.
-    Icons from Flaticon used to display answers.This is helping player to recorgnize words.
+    Icons from Flaticon used to display answers.This helps players to recorgnize words.
 
 - Footer
   - Icon links to purchase the produce and credit resourse provider and to GitHub.
 
-- Technology stack
+- Technology Stack
 
   - HTML5
   - CSS3
