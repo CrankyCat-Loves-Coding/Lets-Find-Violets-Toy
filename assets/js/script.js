@@ -118,7 +118,7 @@ showAnswers.addEventListener ('click', nextQuestion);
  * start game when click start or restart game
  */
 function startGame () {
-    console.log ('started')
+    
     startButton.classList.add ('hide');
     showAnswers.classList.remove ('hide');
     letsgo.classList.add ('hide');
@@ -126,38 +126,37 @@ function startGame () {
     ball.classList.add ('hide');
     violet.classList.add ('hide');
     loadQuiz();
-}; 
+}
 
 /**
  * to load quiz
  */
 let currentquestion = 0;
-loadQuiz()
+loadQuiz();
 
 function loadQuiz() {
-    console.log(currentquestion)
 
-    deselectAnswers() 
-    const quizData = questionBank[currentquestion]
-    questionEl.innerText = quizData.question
-    a.src = quizData.a
-    b.src = quizData.b
-    c.src = quizData.c
-    d.src = quizData.d
+    deselectAnswers();
+    const quizData = questionBank[currentquestion];
+    questionEl.innerText = quizData.question;
+    a.src = quizData.a;
+    b.src = quizData.b;
+    c.src = quizData.c;
+    d.src = quizData.d;
 
-    atext.innerText = quizData.atext
-    btext.innerText = quizData.btext
-    ctext.innerText = quizData.ctext
-    dtext.innerText = quizData.dtext
+    atext.innerText = quizData.atext;
+    btext.innerText = quizData.btext;
+    ctext.innerText = quizData.ctext;
+    dtext.innerText = quizData.dtext;
 
-};
+}
 
 
 /**
  * deselect answer when start a new question
  */
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+    answerEls.forEach(answerEl => answerEl.checked = false);
 }
 
 /**
@@ -168,12 +167,12 @@ function nextQuestion (){
         if (i < questionBank.length){
 
             nextButton.classList.remove ('hide');
-            console.log('answered!');
+        
         } else {
             nextButton.classList.add ('hide');
         }
     }
-};
+}
 
 
 /**
@@ -181,17 +180,17 @@ function nextQuestion (){
  */
 
 function selected() {
-    let answer
+    let answer;
     answerEls.forEach(answerEl => {
         if(answerEl.checked) {
-            answer = answerEl.id
+            answer = answerEl.id;
         }
-    })
-    return answer
+    });
+    return answer;
 }
 
 nextButton.addEventListener ('click', ()=>{
-    const answer = selected()
+    const answer = selected();
     if (answer){
         if(answer === questionBank[currentquestion].correct){
             correct.classList.remove ('hide');
@@ -209,9 +208,9 @@ nextButton.addEventListener ('click', ()=>{
             ball.style.animation = 'ball 3s linear infinite';
             
         }
-        currentquestion++
+        currentquestion++;
         if(currentquestion < questionBank.length) {
-            loadQuiz()
+            loadQuiz();
         } else {
             currentquestion = 0;
             startButton.innerText = 'Restart';
