@@ -93,6 +93,7 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 
 - Testing on devices browsers
   - There was no issue found when tested on iPhone7 device
+  ![Phone Test result](assets/images/readme/phone-test-results.JPG)
   - There was no issue found when tested the game in different browsers: Chrome, Firefox, Safari
 
 
