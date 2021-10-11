@@ -136,7 +136,7 @@ loadQuiz()
 
 function loadQuiz() {
     console.log(currentquestion)
-
+    
     deselectAnswers() 
     const quizData = questionBank[currentquestion]
     questionEl.innerText = quizData.question
