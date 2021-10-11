@@ -21,6 +21,7 @@ h1 {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .game-container {
@@ -38,7 +39,7 @@ h1 {
 
 #game-panel {
     width: 100%;
-    height: 80%;
+    height: 78%;
 }
 
 /*  sections of questions */

@@ -1,6 +1,6 @@
 # [**Let’s find Voilet’s Toy Game**](https://crankycat-loves-coding.github.io/Lets-Find-Violets-Toy/)
 
-![Portfolio image](assets/images/portfolio-image.jpg)
+![Portfolio image](readme/portfolio-image.jpg)
 
 ## **Overview**
 
@@ -41,11 +41,12 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
   - **Header**
 
     Featured at the top of the page, the header shows the game name :Let’s Find Violet's toy!
+    
 
   - **How to Play**
 
     Violet is a bright purple puppy with a pink collar and white markings. There are eight scenes.A welcome page contains a start button allowing players to start the game.A ball will appear if the player has a wrong answer and a message of 'It's ok~ Let's try again~' will display.If the player gets the correct answer, Violet will appear with a message of 'Wow! You got it!'.The message of 'Well done! You have helped me find the ball. Thank you!'will appear when the player completes the quiz and a restart button will show.
-    Players will learn the words 'Sad, Carrot, Apple, Hose, Books, Sink and Rug by completing this quiz.
+    Players will learn the words **'Sad, Carrot, Apple, Hose, Books, Sink** and **Rug'** by completing this quiz.
 
 - Style Elements
   - **Fonts**
@@ -89,13 +90,12 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 - Accessibility
 
   - The colors and fonts chosen are easy to read and accessaiible by running it through lighthouse in devtools.
-![Web Accessibility check](assets/images/lighthouse.jpg)
+![Web Accessibility check](readme/lighthouse.jpg)
 
 - Testing on devices browsers
   - There was no issue found when tested on iPhone7 device
-  ![Phone Test result](assets/images/readme/phone-test-results.JPG)
+  ![Phone Test result](readme/phone-test-results.JPG)
   - There was no issue found when tested the game in different browsers: Chrome, Firefox, Safari
-
 
 [Back to the top](#overview)
 
