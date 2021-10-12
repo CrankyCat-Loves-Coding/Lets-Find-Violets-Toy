@@ -114,6 +114,7 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
   ![Ipad Test Result](readme/test-on-ipad.png)
   ![Ipad Test Result](readme/ipad-test.jpg)
   - There was no issue found when tested the game in different browsers: 
+  
   Chrome
   ![Chrome Test Result](readme/test-on-chrome.jpg)
   ![Chrome Test Result](readme/chrome-test.jpg)
