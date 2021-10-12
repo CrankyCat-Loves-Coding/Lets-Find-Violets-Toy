@@ -29,7 +29,7 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 
 - Target Audience
 
-  - 3-years-old toddler
+  - Children (3-4 years-old)
   - Parents who want to teach their children literacy skills
 
 [Back to the top](#overview)
@@ -38,38 +38,52 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
 
 - Features
 
-  - **Header**
+  - **Welcome Page**
 
-    Featured at the top of the page, the header shows the game name :Let’s Find Violet's toy!
+    The header featured at the top of the page, showing the game name :Let’s Find Violet's toy! Violet is a bright purple puppy with a pink collar and white markings. It also contain a start button allowing players to start the game.The footer contain links to the website for purchasing the product as well as links to the designer's Github page.
+    ![Phone](readme/iphone5-dimensions.jpg) 
     
-
   - **How to Play**
 
-    Violet is a bright purple puppy with a pink collar and white markings. There are eight scenes.A welcome page contains a start button allowing players to start the game.A ball will appear if the player has a wrong answer and a message of 'It's ok~ Let's try again~' will display.If the player gets the correct answer, Violet will appear with a message of 'Wow! You got it!'.The message of 'Well done! You have helped me find the ball. Thank you!'will appear when the player completes the quiz and a restart button will show.
-    Players will learn the words **'Sad, Carrot, Apple, Hose, Books, Sink** and **Rug'** by completing this quiz.
+     There are nine scenes for this game.
+     A ball will appear if the player has a wrong answer and a message of 'It's ok~ Let's try again~' will display.
+     ![Wrong Answer](readme/wrong-answer.jpg)
+     
+     If the player gets the correct answer, Violet will appear with a message of 'Wow! You got it!'.
+     ![Correct Answer](readme/correct-answer.jpg)
+     
+     The message of 'Well done! You have helped me find the ball. Thank you!'will appear when the player completes the quiz and a restart button will show.
+     ![Quiz Complete](readme/quiz-complete.jpg)
+     
+     Players will learn the words **'Sad, Carrot, Apple, Hose, Books, Sink** and **Rug'** by completing this quiz.
+    
 
 - Style Elements
   - **Fonts**
   
     *Roboto* has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+    ![Font for the Body](readme/roboto400.jpg)
 
     *Fjalla One* is a medium contrast display sans serif. Fjalla One has been carefully adjusted to the restrictions of the screen. Despite having display characteristics Fjalla One can be used in a wide range of sizes.
+    ![Font for the Header](readme/fjalla-one-400.jpg)
 
   - **Icons**
 
-    Icons from Font Awesome used to style social links to create a tidy and easy access for subscription.
-    Icons from Flaticon used to display answers.This helps players to recorgnize words.
-
-- Footer
-  - Icon links to purchase the produce and credit resourse provider and to GitHub.
+    - Icons from [Flaticon](https://www.flaticon.com/) used to display answers.This helps players to recorgnize words.
+    ![Answer Icons](readme/answer-icons.jpg)
+    - Icons from [Font Awesome](https://fontawesome.com/) used to style social links to create a tidy and easy access for subscription.
+    - Icon [link](https://store.leapfrog.com/en-us/store/p/read-with-me-violet/_/A-prod19238) to purchase the product and attribute resourse provider and to GitHub.
+    ![Link Icons](readme/link-icons.jpg)
 
 - Technology Stack
 
   - HTML5
   - CSS3
-  - Gitpod/Github
+  - Javascript
+  - [Gitpod/Github](https://github.com/CrankyCat-Loves-Coding)
   - [W3C HTML Validation Service](https://validator.w3.org/#validate_by_input)
   - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+  - [Beautifytools Javascript Validator](https://beautifytools.com/javascript-validator.php)
   - [Font Awesome](https://fontawesome.com/)
   - [Google Fonts](https://fonts.google.com/)
   - [flaticon](https://www.flaticon.com/)
@@ -92,10 +106,20 @@ I create this game for my 3-year-old toddler. This idea came from one of her fav
   - The colors and fonts chosen are easy to read and accessaiible by running it through lighthouse in devtools.
 ![Web Accessibility check](readme/lighthouse.jpg)
 
-- Testing on devices browsers
+- Testing on devices and browsers
   - There was no issue found when tested on iPhone7 device
-  ![Phone Test result](readme/phone-test-results.JPG)
-  - There was no issue found when tested the game in different browsers: Chrome, Firefox, Safari
+  ![Phone Test Result](readme/test-on-iphone7.png)
+  ![Phone Test Result](readme/phone-test.jpg)
+  - There was no issue found when tested on Ipad
+  ![Ipad Test Result](readme/test-on-ipad.png)
+  ![Ipad Test Result](readme/ipad-test.jpg)
+  - There was no issue found when tested the game in different browsers: 
+  Chrome
+  ![Chrome Test Result](readme/test-on-chrome.jpg)
+  ![Chrome Test Result](readme/chrome-test.jpg)
+  Safari
+  ![Safari Test Result](readme/test-on-safari.jpg)
+  ![Safari Test Result](readme/safari-test.jpg)
 
 [Back to the top](#overview)
 
